@@ -28,13 +28,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-// int main()
-// {
-//     const char *s = "12345";
-//     const char *a = "12346";
-//     size_t i = 3;
-
-//     printf("the comparison result is ; %d\n", memcmp(s, a, i));
-
-// }

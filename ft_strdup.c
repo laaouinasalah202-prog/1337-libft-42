@@ -31,11 +31,3 @@ char	*ft_strdup(const char *s)
 	}
 	return (result);
 }
-/*
-int	main(void)
-{
-	char	str[] = "fugsf";
-
-	printf("%s", ft_strdup(str));
-	return (0);
-}*/

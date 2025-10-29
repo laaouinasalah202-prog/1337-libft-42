@@ -29,6 +29,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		}
 	}
 	else
-		ft_memcpy(d, s, n);
+	{
+		while(n)
+		{
+			n--;
+			*d++ = *s++;
+		}
+	}
 	return (dest);
 }

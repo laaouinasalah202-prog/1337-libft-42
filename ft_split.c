@@ -92,15 +92,3 @@ char	**ft_split(char const *s, char c)
 	big[j] = NULL;
 	return (big);
 }
-int main()
-{
-	char *str = " hgyahfv vyuas agyu afusgf fuysf";
-	char **big;
-	big = ft_split(str, ' ');
-	int j = 0;
-	while(5 > j)
-	{
-		printf("::::::::::::::::%s\n", big[j]);
-		j++;
-	}
-}

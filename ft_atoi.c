@@ -9,7 +9,8 @@
 /*   Updated: 2025/10/18 12:22:32 by slaaouin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include <stdio.h>
+#include <stdlib.h>
 int	ft_atoi(const char *nptr)
 {
 	int	i;

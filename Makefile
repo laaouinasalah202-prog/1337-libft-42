@@ -17,32 +17,28 @@ BONUS = ft_lstiter_bonus.c ft_lstadd_back_bonus.c \
 
 OBJS = $(SRCS:.c=.o)
 OBJSB = $(BONUS:.c=.o)
-FLAGS = -Wall -Wextra -Werror 
+FLAGS = -Wall -Wextra -Werror
 CC = cc
 NAME = libft.a
 LIBC = ar -rcs
-RM = rm -f
 
 %.o: %.c
 	${CC} ${FLAGS} -c $< -o $@
 
 ${NAME} : ${OBJS}
 	${LIBC} ${NAME} ${OBJS}
+
 all : ${NAME}
 
-bonus : .bonus
-
-.bonus : ${OBJSB}
+bonus : ${OBJSB}
 	${LIBC} ${NAME} ${OBJSB}
-	@touch .bonus
+
 clean :
-	${RM} ${OBJS} ${OBJSB}
+	rm -f clean ${OBJS} ${OBJSB}
 
 fclean : clean
-	${RM} ${NAME} .bonus
+	rm -f ${NAME}
 
 re : clean fclean
 
-.SECONDARY : ${OBJS} ${OBJSB}
-
-.PHONY : clean fclean re bonus all
+.PHONY : clean fclean re all

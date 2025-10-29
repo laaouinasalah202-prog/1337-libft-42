@@ -24,12 +24,3 @@ void	ft_bzero(void *s, size_t n)
 		l++;
 	}
 }
-
-// int main()
-// {
-//     char str[] = "shegy";
-//     ft_bzero(str, 3);
-//     for(int i = 0 ; i < 6 ; i++)
-//         printf("%03X\n", (unsigned char)str[i]);
-
-// }

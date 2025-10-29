@@ -36,11 +36,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-// int	main(void)
-// {
-// 	const char	big[] = "uegfsgfff";
-// 	const char	l[] = "sgf";
-
-// 	printf("%s\n", strnstr(big, l, 8));
-// 	return (0);
-// }

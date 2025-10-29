@@ -23,12 +23,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-/*
-int main()
-{
-    char str[] = "sfuugug";
-
-    ft_memset(str, 'c', 5);
-    printf("after that ; %s\n", str);
-    return (0);
-}*/

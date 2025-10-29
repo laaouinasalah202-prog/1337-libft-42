@@ -43,14 +43,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(res, s1, size + 1);
 	return (res);
 }
-/*
-int	main(void)
-{
-	char	*dt;
-
-	dt = ft_strtrim("sgfs fhjsfff", "sf");
-	printf("%s\n", dt);
-	free(dt);
-	return (0);
-}
-*/

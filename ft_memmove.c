@@ -30,7 +30,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	else
 	{
-		while(n)
+		while (n)
 		{
 			n--;
 			*d++ = *s++;

@@ -15,7 +15,8 @@ static int	ft_len2(int n)
 {
 	long int	len;
 
-	len = (n <= 0) ? 1 : 0;
+	if (n <= 0)
+		len++;
 	while (n != 0)
 	{
 		len++;

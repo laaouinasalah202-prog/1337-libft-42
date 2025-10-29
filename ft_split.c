@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: slaaouin <slaaouin@student.42.fr>          #+#  +:+       +#+        */
+/*   By: slaaouin <slaaouin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-10-16 14:44:47 by slaaouin          #+#    #+#             */
-/*   Updated: 2025/10/18 12:57:36 by slaaouin         ###   ########.fr       */
+/*   Created: 2024/10/29 21:02:40 by slaaouin          #+#    #+#             */
+/*   Updated: 2024/10/29 21:02:40 by slaaouin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 static int	ft_count_word(const char *str, char c)
@@ -34,13 +35,13 @@ static int	ft_count_word(const char *str, char c)
 
 static char	**ft_free(char **big, int j)
 {
-	while(j >= 0)
+	while (j >= 0)
 	{
 		free(big[j]);
-			j--;
+		j--;
 	}
 	free(big);
-	return NULL;
+	return (NULL);
 }
 
 static char	*fft_strdup(const char *str, char c)
@@ -82,7 +83,7 @@ char	**ft_split(char const *s, char c)
 		if (*s)
 		{
 			big[j] = fft_strdup(s, c);
-			if(!big[j])
+			if (!big[j])
 				return (ft_free(big, j));
 			j++;
 			while (*s && *s != c)

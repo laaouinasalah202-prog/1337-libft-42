@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: slaaouin <slaaouin@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -13,8 +13,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	// if(!lst || !new)
-		// return;
+	if (!lst || !new)
+		return ;
 	new->next = *lst;
 	*lst = new;
 }

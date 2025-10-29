@@ -2,27 +2,17 @@
     "files.associations": {
         "libft.h": "c"
     },
-    // Auto-save settings
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000,
-    // Format on save
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    // Trim trailing whitespace
+    "editor.formatOnPaste": false,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    // Bracket pair colorization
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active",
-    // Mini map
-    "editor.minimap.enabled": true,
-    // Line numbers
-    "editor.lineNumbers": "on",
-    // Tab settings
     "editor.tabSize": 4,
-    "editor.insertSpaces": false, // Use tabs instead of spaces (common for C)
-    // Save all files on window change
-    "files.autoSaveWhenNoErrors": true,
-    // Show whitespace characters
-    "editor.renderWhitespace": "boundary"
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+    "editor.renderWhitespace": "boundary",
+    "[c]": {
+        "editor.defaultFormatter": "keyhr.42-c-format"
+    }
 }

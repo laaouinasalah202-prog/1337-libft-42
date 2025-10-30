@@ -20,18 +20,17 @@ OBJSB = $(BONUS:.c=.o)
 FLAGS = -Wall -Wextra -Werror
 CC = cc
 NAME = libft.a
-LIBC = ar -rcs
 
 %.o: %.c
 	${CC} ${FLAGS} -c $< -o $@
 
 ${NAME} : ${OBJS}
-	${LIBC} ${NAME} ${OBJS}
+	ar -rcs ${NAME} ${OBJS}
 
 all : ${NAME}
 
 bonus : ${OBJSB}
-	${LIBC} ${NAME} ${OBJSB}
+	ar -rcs ${NAME} ${OBJSB}
 
 clean :
 	rm -f clean ${OBJS} ${OBJSB}

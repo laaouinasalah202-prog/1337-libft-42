@@ -9,12 +9,24 @@
 /*   Updated: 2025/10/18 12:38:58 by slaaouin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: slaaouin <slaaouin@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/29 21:02:40 by slaaouin          #+#    #+#             */
+/*   Updated: 2024/10/29 21:02:40 by slaaouin         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "libft.h"
 
 static int	ft_len2(int n)
 {
-	long int	len;
+	int	len;
 
+	len = 0;
 	if (n <= 0)
 		len++;
 	while (n != 0)
@@ -70,6 +82,5 @@ char	*ft_itoa(int n)
 	}
 	else
 		number = n;
-	result = ft_str(len, number, is_negative);
-	return (result);
+	return (ft_str(len, number, is_negative));
 }
